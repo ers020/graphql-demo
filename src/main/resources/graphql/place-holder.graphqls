@@ -11,8 +11,8 @@ type Author {
 
 # The Root Query for the application
 type Query {
-    books(count: Int, offset: Int): [Book]!
-    getBook(title: String!): [Book]!
+    getBooks: [Book]!
+    getBooksByTitle(title: String!): [Book]!
 }
 
 
