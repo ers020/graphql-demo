@@ -7,7 +7,7 @@ This is just a demo of using Spring Boot and GraphQL.
 #
 ## POSTMAN QUERY PAYLOAD
 #
-Endpoint: `http://localhost:8080/graphql`
+Endpoint: `http://localhost:8080`
 #
 To get the query of books, use the following:
 
@@ -41,12 +41,12 @@ query {
 #
 ## POSTMAN MUTATION PAYLOAD
 #
-Endpoint `http://localhost:8080/graphql/mutation`
+Endpoint `http://localhost:8080`
 #
 To save the mutation of books/author, use the following:
 ```
 mutation {
-    createBook(title: "title", year: "year, firstName: "firstName", lastName: "lastName") {
+    createBook(title: "title", year: "2020", firstName: "firstName", lastName: "lastName") {
         title
         author {
             firstName
