@@ -2,6 +2,7 @@ spring:
   graphql:
     graphiql:
       enabled: true
+
   datasource:
     driverClassName: ${DB_DRIVER:org.h2.Driver}
     password: ${DB_PASSWORD:password}
@@ -15,3 +16,9 @@ spring:
     properties.hibernate:
       format_sql: true
       show_sql: true
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          cors: DEBUG
